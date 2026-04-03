@@ -1,22 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "247 Rapid Response",
-  description: "London's 24/7 emergency property maintenance experts — fast response, every time",
+  title: "247 Rapid Response — AI Receptionist Demo",
+  description: "Experience AI-powered call handling for 247 Rapid Response",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
